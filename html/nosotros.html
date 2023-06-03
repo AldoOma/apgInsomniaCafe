@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insomnia Café - Nosotros</title>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--FontAwesome-->
+
+    <!--Bootstrap css-->
+        <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!--Bootstrap css-->
+
+    <link rel="stylesheet" href="../css/style-header.css">
+
+    <link rel="stylesheet" href="../css/style-nosotros.css">
+
+    <link rel="stylesheet" href="../css/style-footer.css">
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 sticky-top">
+        <div class="container">
+            <!--Logo-->
+            <a class="navbar-brand order-lg-0" href="home.html" >
+                <h1 class="d-flex flex-column justify-content-space-between align-items-center">
+                    Insomnia 
+                    <br>
+                    <span class="text-uppercase">Café</span>
+                </h1>
+            </a>
+            <!--Logo-->
+
+            <!--Iconos de carrito y de usuario-->
+            <div class="order-lg-2">
+                <!--Carrito-->
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <!--Numero de articulos en el carrito-->
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                        <!--Numero de articulos en el carrito-->
+                    </button>
+                <!--Carrito-->
+
+                <!--Usuario-->
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                <!--Usuario-->
+            </div>
+
+            <!--Menú de navegación-->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <!--Menu responsive opciones-->
+                    <div class="collapse navbar-collapse order-lg-1" id="collapseMenu">
+                        <ul class="navbar-nav mx-auto text-center">
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-dark" href="home.html">Inicio</a>
+                            </li>
+                            
+
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-dark" href="nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-dark" href="menu.html">Menú</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!--Menu responsive opciones-->
+             <!--Menú de navegación-->
+
+        </div>
+    </nav>
+
+
+    <!--
+        xs mobiles 
+        sm tablets
+        md  computadoras
+        lg computadoras largas
+
+        xs pantallas menores de 576 px de ancho pantalla de 0 a 575
+
+        sm pantallas mayores o iguales de 576 px de ancho de 576 a 767
+
+        md pantallas mayores o iguales a 768 px de ancho de 768 a 991
+
+        lg pantallas mayores o iguales a 992 px de ancho de 992 a 1199
+
+        xl pantallas mayores a 1200 px de ancho de 1200 a 1439
+
+        xxl pantallas mayores a 1440 px de ancho
+    -->
+
+
+    <!--Descripcion de la empresa-->
+    <section id="historia" class="m-5">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-12 col-md-12 col-lg-5 image-wrapper">
+                    
+                </div>
+                <div class="col-12 col-lg-7 col-md-12">
+                    <h2 class="text-capitalize my-5 text-center">nuestra historia</h2>
+
+                    <div class="historia__descripcion">
+                        <p>
+                            Nuestra cafetería diseñada para la comodidad de todos los amantes del café, inicio como un negocio en el año 2023 con alta pretención de aceptación nacional y posicionamiento alto en el sector comercial.
+                        </p>
+                    </div>
+
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Descripcion de la empresa-->
+
+    <!--Nuestro equipo-->
+    <section id="equipo">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center text-capitalize my-5">nuestro equipo</h2>
+
+                <!--
+                    Un barista es un profesional especializado en la preparación y servido de café de alta calidad en una cafetería o establecimiento similar. El término "barista" se originó en Italia y se refiere a una persona que trabaja en el mostrador de un bar o café, preparando y sirviendo bebidas a base de café, como espresso, capuchinos, lattes y otros tipos de café.
+                -->
+                <!--Barista-->
+                <div class="col-xl-4 col-md-6 col-xs-1 mb-5">
+
+                    <div class="empleado position-relative">
+
+                        <img src="../images/nosotros/barista.jpg" alt="" class="equipo-imagen">
+                        
+                        <div class="equipo-informacion">
+                            <p class="equipo-informacion__nombre text-center fw-bold mb-2">Fernanda Castillo</p>
+                            <p class="equipo-informacion__puesto text-center fw-bold mb-5">Barista</p>
+
+                            <div class="social-icons d-flex justify-content-center">
+
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                               
+                                <a href="">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!--Barista-->
+
+                <!--Limpieza-->
+                <div class="col-xl-4 col-md-6 col-xs-1 mb-5">
+
+                    <div class="empleado position-relative">
+
+                        <img src="../images/nosotros/limpiadora.jpg" alt="" class="equipo-imagen">
+                        
+                        <div class="equipo-informacion">
+                            <p class="equipo-informacion__nombre text-center fw-bold mb-2">Laura Hernández</p>
+                            <p class="equipo-informacion__puesto text-center fw-bold mb-5">Afanadora</p>
+
+                            <div class="social-icons d-flex justify-content-center">
+
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                               
+                                <a href="">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!--Limpieza-->
+
+                <!--Gerente-->
+                <div class="col-xl-4 col-md-6 col-xs-1 mb-5">
+
+                    <div class="position-relative empleado">
+
+                        <img src="../images/nosotros/gerente.jpg" alt="" class="equipo-imagen">
+                        
+                        <div class="equipo-informacion">
+                            <p class="equipo-informacion__nombre text-center fw-bold mb-2">Gabriela Márquez</p>
+                            <p class="equipo-informacion__puesto text-center fw-bold mb-5">Gerente</p>
+
+                            <div class="social-icons d-flex justify-content-center">
+
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                               
+                                <a href="">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!--Gerente-->
+
+                <!--Cocinero-->
+                <div class="col-xl-4 col-md-6 col-xs-1 mb-5">
+
+                    <div class="position-relative empleado">
+
+                        <img src="../images/nosotros/cocinero.jpg" alt="" class="equipo-imagen">
+                        
+                        <div class="equipo-informacion">
+                            <p class="equipo-informacion__nombre text-center fw-bold mb-2">Isaac Martinez</p>
+                            <p class="equipo-informacion__puesto text-center fw-bold mb-5">Cocinero</p>
+
+                            <div class="social-icons d-flex justify-content-center">
+
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                               
+                                <a href="">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!--Cocinero-->           
+
+                <!--Ayudante de cocina-->
+                <div class="col-xl-4 col-md-6 col-xs-1 mb-5">
+
+                    <div class="position-relative empleado">
+
+                        <img src="../images/nosotros/ayudante-cocina.jpg" alt="" class="equipo-imagen">
+                        
+                        <div class="equipo-informacion">
+                            <p class="equipo-informacion__nombre text-center fw-bold mb-2">Lidia Fonseca</p>
+                            <p class="equipo-informacion__puesto text-center fw-bold mb-5">Ayudante de cocina</p>
+
+                            <div class="social-icons d-flex justify-content-center">
+
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                               
+                                <a href="">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!--Ayudante de cocina--> 
+
+                <!--Cajera-->
+                <div class="col-xl-4 col-md-6 col-xs-1 mb-5">
+
+                    <div class="position-relative empleado">
+
+                        <img src="../images/nosotros/cajera.jpg" alt="" class="equipo-imagen">
+                        
+                        <div class="equipo-informacion">
+                            <p class="equipo-informacion__nombre text-center fw-bold mb-2">Rebeca Acuña</p>
+                            <p class="equipo-informacion__puesto text-center fw-bold mb-5">Cajera</p>
+
+                            <div class="social-icons d-flex justify-content-center">
+
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                               
+                                <a href="">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!--Cajera--> 
+
+                
+            </div>
+        </div>
+
+
+    </section>
+    <!--Nuestro equipo-->
+
+    <section id="mision" class="my-5">
+        <div class="container">
+            <div class="row align-items-center ">
+
+                <div class="col-12 col-lg-7 col-md-12">
+                    <h2 class="text-capitalize my-5 text-center">nuestra misión</h2>
+
+                    <div class="historia__descripcion">
+                        <p>
+                            Brindar un espacio agradable y acogedor para los amantes del café, deleitar a los clientes con una atención amable y respetuosa para que puedan crear recuerdos y compartir momentos únicos con sus más cercanos o simplemente relajarse de forma individual.
+                        </p>
+                    </div>
+
+    
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-5 image-wrapper">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!--Logo de la página-->
+                <div class="">
+                    <a href="home.html">
+                        <h1>
+                            Insomnia 
+                            <br>
+                            <span class="text-uppercase">Café</span>
+                        </h1>
+                    </a>
+                </div>
+                <!--Logo de la página-->
+
+                <!--Linea-->
+                <div class="linea">
+
+                </div>
+                <!--Linea-->
+
+                <!--Copyright e iconos-->
+                <div class="d-flex justify-content-between my-5">
+                    <p>
+                        &copy;Copyright, Insomnia Café, 2023
+                    </p>
+
+                    <div>
+
+                        <a href="">
+                            <i class="fa-brands fa-facebook social-icons"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-brands fa-instagram social-icons"></i>
+                        </a>
+                       
+                        <a href="">
+                            <i class="fa-brands fa-twitter social-icons"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <!--Copyright e iconos-->
+
+                <!--Menu links-->
+                <div class="text-center menu-link">
+                    <a href="home.html" class="">Inicio</a>
+                    <a href="nosotros.html" class="">Nosotros</a>
+                    <a href="menu.html" class="">Menu</a>
+                    <a href="sucursales.html">Sucursales</a>
+                    <a href="cupones.html">Cupones</a>
+                </div>
+                <!--Menu links-->
+
+            </div>
+        </div>
+
+        <div class="caja-cafe col-lg-12">
+
+        </div>
+    </footer>
+
+
+    <!--bootstrap js-->
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!--bootstrap js-->
+
+    <!--Jquery-->
+    <script src="../js/jquery-3.7.0.js"></script>
+    <!--Jquery-->
+    
+</body>
+</html>

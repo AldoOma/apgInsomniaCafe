@@ -1,0 +1,54 @@
+/*Footer*/
+footer{
+    background: url(../images/footer-bg.jpg) no-repeat;
+    background-size: cover ;
+}
+
+footer .container{
+    padding:60px 20px;
+}
+/*Titulo Insomnia Café*/
+footer, footer a{
+    color:#fff;
+}
+
+footer h1{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+footer .social-icons{
+    font-size:18px ;
+    margin-right: 10px;
+}
+/*Titulo Insomnia Café*/
+
+.menu-link a{
+    margin: 0 10px;
+    transition: .5s all;
+}
+.caja-cafe{
+    height: 40px;
+    background-color: #230D02;
+}
+
+
+footer .linea{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.menu-link a:hover{
+    color:#aaa;
+} 
+
+/*Footer*/

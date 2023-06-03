@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Walbaum-Regular';
+    src: url("../font/walbaumbold/Walbaum-Regular.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Walbaum-Regular';
+    box-sizing: border-box;
+}
+
+
+.btn-menu:hover{
+    background-color: #230D02;
+    color:#fff;
+    transform: scale(1.05);
+}
+
+.item__title{
+    color:#230D02;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.item__description{
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.item__price{
+    font-size: 18px;
+}
+
+.btn-add{
+
+    background-color: #230D02;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 80%;
+    padding:8px 15px;
+}
+
+/*Estilos para los items del menu*/
+.item__containter{
+    margin-top: 50%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.item{ 
+    text-align: center;
+    position: relative;
+    display: flex !important;/*para que todos los cards tengan el mismo tamaño*/
+}
+
+
+
+.item__img{
+    position: absolute;
+    top:0;
+    z-index: 100;
+    border-radius: 50%;
+    width: 80%;
+
+}
+
+.item__img img{
+    /*filter:drop-shadow(2px 20px 4px #bbb);*/
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+    filter: drop-shadow( 8px 0px 8px #c6c6c6);
+    transition: .2s transform ;
+}
+
+.item__img img:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+
+
+.item__text{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    padding-top: 25%;
+    border-radius: 15px;
+    box-shadow: 3px 2px 20px #bbb;
+    background-color: #fff;
+    width: 100%;
+
+}
+
+/*Estilos para los items del menu*/
+
+/*Filtros del menú*/
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    font-size: 17px;
+    border-radius: 18px;
+    border:1px solid #ccc;
+    background-color:#fff ;
+    transition: .5s all;
+    cursor: pointer;
+    padding: 10px 15px;
+    float: left;
+    margin: 0 .625%;
+    width: 23.5%;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+
+label:hover{
+    background-color: #230D02;
+    color:#fff;
+}
+
+.invisible-label{
+    width: 100%;
+    float: none;
+    border:none;
+    cursor:auto;
+}
+
+.invisible-label:hover{
+    background-color: #fff;
+}
+
+/*Cuando un input de tipo radio este seleccionado que
+tenga los siguientes estilos: */
+/*
+El más + selecciona al primer label 
+que le siga al input seleccionado
+*/
+
+input[type="radio"]:checked + label{
+
+    background-color: #230D02;
+    color:#fff;
+}
+
+/*
+Cuando le de click a bebida almuerzo y desayuno desapareceran
+*/
+
+input[type="radio"][id="bebida"]:checked ~ .product-info .almuerzo,
+input[type="radio"][id="bebida"]:checked ~ .product-info .desayuno{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin:0;
+    padding: 0;
+    position: absolute;
+}
+
+/*
+Cuando le den click a desayuno, bebida y almuerzo debe desaparecer
+*/
+
+input[type="radio"][id="desayuno"]:checked ~ .product-info .bebida,
+input[type="radio"][id="desayuno"]:checked ~ .product-info .almuerzo{
+    
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin:0;
+    padding: 0;
+    position: absolute;/*para que pierdan su lugar en el flujo*/
+}
+
+/*
+Cuando le den click a almuerzo, bebida y desayuno debe desaparecer
+*/
+input[type="radio"][id="almuerzo"]:checked ~ .product-info .bebida,
+input[type="radio"][id="almuerzo"]:checked ~ .product-info .desayuno{
+
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin:0;
+    padding: 0;
+    position: absolute;/*para que pierdan su lugar en el flujo*/
+}
+
+
+
+/*Filtros del menú*/
+
+/*Ajustes responsivos para cuando este en una pantalla menor a 800 px*/
+@media(max-width: 800px){
+
+    label{
+
+        margin:5px .625%;
+        width: 48.5%;
+    }
+}
+
+/*Ajustes responsivos para cuando este en una pantalla menor a 800 px*/
+@media(max-width: 330px){
+
+    label{
+
+        margin:5px .625%;
+        width: 98.5%;
+    }
+}
+

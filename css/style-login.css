@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Walbaum-Regular';
+    src: url("../font/walbaumbold/Walbaum-Regular.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Walbaum-Regular';
+    box-sizing: border-box;
+    
+    letter-spacing: 1px;
+}
+
+.row{
+    width: 100%;
+}
+
+label{
+    color:#66280a;
+    margin-bottom: 25px;
+}
+
+.logo{
+    color:#893d1e;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding:10px 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:1px solid #888;
+    outline: none ;
+    margin-bottom: 50px;
+
+}
+
+input:focus{
+    border-bottom: 2px solid #893d1e;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn{
+    display: block;
+    background-color: #66280a;
+    width: 90%;
+    color:#fff;
+    border-radius: 8px;
+    padding:15px 0;
+    margin: 0 auto;
+}
+
+.question{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.question a{
+    color:#66280a;
+}
+
+/*Ajustes responsivos para cuando este en una pantalla menor a 992 px*/
+@media(min-width: 992px){
+    .fotos img{
+        height: 100vh;
+    }
+
+    
+}

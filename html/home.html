@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insomnia Café - Inicio</title>
+
+    <!--FontAwesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--FontAwesome-->
+
+    <!--Bootstrap css-->
+        <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!--Bootstrap css-->
+
+    <!--CSS personalizado-->
+
+        <link rel="stylesheet" href="../css/style-header.css">
+        
+        <link rel="stylesheet" href="../css/style-home.css">
+
+        <link rel="stylesheet" href="../css/style-footer.css">
+    <!--CSS personalizado-->
+
+</head>
+<body>
+
+    <!--barra de navegación-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 sticky-top">
+        <div class="container">
+            <!--Logo-->
+            <a class="navbar-brand order-lg-0" href="home.html" >
+                <h1 class="d-flex flex-column justify-content-space-between align-items-center">
+                    Insomnia 
+                    <br>
+                    <span class="text-uppercase">Café</span>
+                </h1>
+            </a>
+            <!--Logo-->
+
+            <!--Iconos de carrito y de usuario-->
+            <div class="order-lg-2">
+                <!--Carrito-->
+                    <button type="button" class="btn position-relative">
+                        <a href="cart.html">
+                            <i class="fa-solid fa-cart-shopping">
+                            </i>
+                        </a>
+
+                        <!--Numero de articulos en el carrito-->
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                        <!--Numero de articulos en el carrito-->
+                    </button>
+                <!--Carrito-->
+
+                <!--Usuario-->
+                    <button type="button" class="btn position-relative">
+                        <a href="singin.html">
+                            <i class="fa-solid fa-user">
+                            </i>
+                        </a>
+                    </button>
+                <!--Usuario-->
+            </div>
+
+            <!--Menú de navegación-->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <!--Menu responsive opciones-->
+                    <div class="collapse navbar-collapse order-lg-1" id="collapseMenu">
+                        <ul class="navbar-nav mx-auto text-center">
+
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-dark" href="home.html">Inicio</a>
+                            </li>
+                            
+
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-dark" href="nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-dark" href="menu.html">Menú</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                <!--Menu responsive opciones-->
+             <!--Menú de navegación-->
+
+
+
+            <!--Iconos de carrito y de usuario--->
+        </div>
+    </nav>
+
+    
+    <!--Ordena ya-->
+    <section class="main">
+
+        
+        <div class="row">
+
+            <div class="col-lg-8 order-lg-1 semillas">
+
+            </div>
+
+            <div class="col-lg-4 order-lg-0 d-flex flex-column justify-content-center align-items-center">
+                <h3>
+                    Empieza tu
+                    <br>
+                    día con un sorbo
+                    <br>
+                    de energía
+                </h3>
+
+                <button class="text-capitalize mt-3" id="btn-1">ordenar ahora</button>
+            </div>
+
+        </div>
+        
+    </section>
+    <!--Ordena ya-->
+
+    <section class="choose-us">
+
+        <h3 class="text-center py-5">¿Por qué nuestro café?</h3>
+
+        <div class="row d-flex justify-content-center align-items-center pb-5">
+
+            <div class="col-lg-3">
+
+                <div class="circle">
+                    <div class="small-circle bowl-semillas"></div>
+                </div>
+                <p class="text-center mt-5">Granos de calidad</p>
+            </div>
+
+
+            <div class="col-lg-1 text-center">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            
+            <div class="col-lg-3">
+                <div class="circle">
+                    <div class="small-circle bowl-leche"></div>
+    
+                </div>
+
+                <p class="text-center mt-5">Leche cremosa</p>
+
+            </div>
+
+            <div class="col-lg-1 text-center">
+                <i class="fa-solid fa-equals"></i>
+            </div>
+            
+            <div class="col-lg-3 text-center">
+                <div class="circle">
+                    <div class="small-circle bowl-cafe"></div>
+                </div>
+
+                <p class="text-center mt-5">Café perfecto</p>
+            </div>
+
+        
+
+        </div>
+
+    </section>
+
+    <section class="galeria my-5">
+
+        <div class="galeria__contenedor">
+
+                <input type="radio" name="slider" id="img-3" class="desplazamientoimg">
+                <input type="radio" name="slider" id="img-1" checked class="desplazamientoimg">
+                <input type="radio" name="slider" id="img-2" class="desplazamientoimg">
+
+
+
+            
+            
+
+            <div class="cards">
+                
+                <label class="cards__img" for="img-1" id="lbl1" >
+                    <img src="../images/cafeteria-mano-mesero.jpg" alt="">
+                </label>
+
+                <label class="cards__img" for="img-2" id="lbl2">
+                    <img src="../images/cafeteria-restaurante.jpg" alt="">
+                </label>
+
+                
+                <label class="cards__img" for="img-3" id="lbl3">
+                    <img src="../images/cafeteria-cajera.jpg">
+                </label>
+
+            </div>
+
+        </div> 
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!--Logo de la página-->
+                <div class="">
+                    <a href="home.html">
+                        <h1>
+                            Insomnia 
+                            <br>
+                            <span class="text-uppercase">Café</span>
+                        </h1>
+                    </a>
+                </div>
+                <!--Logo de la página-->
+
+                <!--Linea-->
+                <div class="linea">
+
+                </div>
+                <!--Linea-->
+
+                <!--Copyright e iconos-->
+                <div class="d-flex justify-content-between my-5">
+                    <p>
+                        &copy;Copyright, Insomnia Café, 2023
+                    </p>
+
+                    <div>
+
+                        <a href="">
+                            <i class="fa-brands fa-facebook social-icons"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-brands fa-instagram social-icons"></i>
+                        </a>
+                       
+                        <a href="">
+                            <i class="fa-brands fa-twitter social-icons"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <!--Copyright e iconos-->
+
+                <!--Menu links-->
+                <div class="text-center menu-link">
+                    <a href="home.html" class="">Inicio</a>
+                    <a href="nosotros.html" class="">Nosotros</a>
+                    <a href="menu.html" class="">Menu</a>
+                    <a href="sucursales.html">Sucursales</a>
+                    <a href="cupones.html">Cupones</a>
+                </div>
+                <!--Menu links-->
+
+            </div>
+        </div>
+
+        <div class="caja-cafe col-lg-12">
+
+        </div>
+    </footer>
+
+
+    <!--barra de navegación-->
+
+    <!--bootstrap js-->
+        <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"> 
+        </script>
+    <!--bootstrap js-->
+
+    <!--Jquery-->
+        <script src="../js/jquery-3.7.0.js">
+        </script>
+    <!--Jquery-->
+
+</body>
+
+
+
+</html>

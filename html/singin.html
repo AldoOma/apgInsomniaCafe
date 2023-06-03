@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insomnia Café - Iniciar Sesión</title>
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--FontAwesome-->
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!--Bootstrap css-->
+
+    <link rel="stylesheet" href="../css/style-login.css">
+
+</head>
+<body>
+    <section>
+        <div class="row">
+            <div class="col-lg-7 fotos">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../images/singin/para redimensionar (1).jpg" class="d-block w-100" alt="...">
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="../images/singin/para redimensionar 2 (1).jpg" class="d-block w-100" alt="...">
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="../images/singin/amigos-cafe.jpeg" class="d-block w-100" alt="...">
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="../images/singin/3-cafes.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="col-lg-5">
+                <!--Logo del sitio-->
+                <h1 class="d-flex flex-column mt-5 fw-bold justify-content-space-between flex-grow-1 align-items-center logo">
+                    Insomnia 
+                    <br>
+                    <span class="text-uppercase">Café</span>
+                </h1>
+                <!--Logo del sitio-->
+
+                <!--Formulario del sitio-->
+                <form action="" class="flex-grow-1">
+
+                    <label for="login-email" class="fw-bold">Email</label>
+                    <input type="email" id="login-email" placeholder="Ingresa tu email">
+
+                    <label for="login-password" class="fw-bold">Contraseña</label>
+                    <input type="password" id="login-password" placeholder="Ingresa tu contraseña">
+
+                    <button type="submit" class="btn mx-auto mt-5 my-4">
+                        Iniciar Sesión
+                    </button>
+
+                    <div class="question">
+                        <p class="d-inline-block">Aun no tienes una cuenta?</p>
+                        <a href="singup.html">Crear una</a>
+                    </div>
+                </form>
+                <!--Formulario del sitio-->
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--bootstrap js-->
+        <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"> 
+        </script>
+    <!--bootstrap js-->
+
+    <!--Jquery-->
+        <script src="../js/jquery-3.7.0.js">
+        </script>
+    <!--Jquery-->
+</body>
+</html>

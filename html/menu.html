@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insomnia Café - Menú</title>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--FontAwesome-->
+
+    <!--Bootstrap css-->
+        <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../css/style-header.css">
+    <link rel="stylesheet" href="../css/style-menu.css">
+    <link rel="stylesheet" href="../css/style-footer.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 sticky-top">
+        <div class="container">
+            <!--Logo-->
+            <a class="navbar-brand order-lg-0" href="home.html" >
+                <h1 class="d-flex flex-column justify-content-space-between align-items-center">
+                    Insomnia 
+                    <br>
+                    <span class="text-uppercase">Café</span>
+                </h1>
+            </a>
+            <!--Logo-->
+
+            <!--Iconos de carrito y de usuario-->
+            <div class="order-lg-2">
+                <!--Carrito-->
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <!--Numero de articulos en el carrito-->
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                        <!--Numero de articulos en el carrito-->
+                    </button>
+                <!--Carrito-->
+
+                <!--Usuario-->
+                    <button type="button" class="btn position-relative">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                <!--Usuario-->
+            </div>
+
+            <!--Menú de navegación-->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+                <!--Menu responsive opciones-->
+                    <div class="collapse navbar-collapse order-lg-1" id="collapseMenu">
+                        <ul class="navbar-nav mx-auto text-center">
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-dark" href="home.html">Inicio</a>
+                            </li>
+                            
+
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-dark" href="nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-dark" href="menu.html">Menú</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!--Menu responsive opciones-->
+             <!--Menú de navegación-->
+        </div>
+    </nav>
+
+    <section id="menu" class="my-5">
+            
+        <div class="container">
+            <div class="">
+
+                    <!--Botones de navegacion-->
+
+                    <!--Explorar todo-->
+                    <input type="radio" id="todo" name="filtro" class="filtro" checked>
+                    <label for="todo">Explorar todo</label>
+                    <!--Explorar todo-->
+
+                    <!--Bebidas-->
+                    <input type="radio" id="bebida" name="filtro" class="filtro" >
+                    <label for="bebida">Bebidas</label>
+                    <!--Bebidas-->
+                 
+                    <!--Desayunos-->
+                    <input type="radio" id="desayuno" name="filtro"  class="filtro">
+                    <label for="desayuno">Desayunos</label>
+                    <!--Desayunos-->
+
+                    <!--Almuerzos-->
+                    <input type="radio" id="almuerzo"  name="filtro" class="filtro">
+                    <label for="almuerzo" class="almuerzo">Almuerzos</label>
+                    <!--Almuerzos-->
+
+                    <!--Botones de navegacion-->
+
+                    <label for="" class="invisible-label"></label>
+
+                <div class="product-info mt-4 row ">
+
+                    <!--Iced Mocha-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 item bebida">                            
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/bebidas/cafe/iced-coffee/iced-mocha.png" alt=""
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->       
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    iced mocha
+                                </p>
+
+                                <p class="item__description">
+                                    Cubierto con un topping de crema batida y un chorrito de chocolate, nuestro delicioso y refrescante Iced Mocha es una mezcla de expresso, salsa moca, leche y hielo con nata montada.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 4.5
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+                       
+                    </div>
+                    <!--Iced Mocha-->
+
+
+
+
+
+
+
+
+                    <!--Expresso Mocha-->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 item bebida">                            
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/bebidas/cafe/expresso/mocha.png" alt=""
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->       
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    iced mocha
+                                </p>
+
+                                <p class="item__description " >
+                                    Espresso, jarabe de chocolate, leche al vapor y crema batida.
+                                    
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 4
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+                       
+                    </div>
+                    <!--Expresso Mocha-->
+
+
+                    <!--Capuchino-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item bebida">
+
+                        <div class="item__containter">
+
+                                                    <!--imagen del item del menu-->
+                        <div class="product-info__img item__img" >
+                            
+                            <img src="../images/menu/bebidas/cafe/expresso/capuchino.png" alt=""
+                            class="">
+                            
+                        </div>
+                        <!--imagen del item del menu-->
+
+                        <!--Informacion del producto-->
+                        <div class="text-center item__text">
+
+                            <p class="item__title text-capitalize my-1">
+                                Capuchino
+                            </p>
+
+                            <p class="item__description">
+                                Una gran cantidad de expresso, leche y abundante nata.
+                                
+                            </p>
+
+                            <p class="item__price fw-bold my-4">
+                                $ 3
+                            </p>
+
+                            <button id="add-cart" class="btn-add mb-5">
+                                Agregar al carrito
+                            </button>
+
+
+                        </div>
+                        <!--Informacion del producto-->
+                        </div>
+
+
+                    </div>
+                    <!--Capuchino-->
+
+
+                    <!--Chocolate Pancakes-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item  desayuno">
+
+                        <div class="item__containter">
+
+                            <!--imagen del item del menu-->
+                            <div class=" item__img" >
+
+                                <img src="../images/menu/desayuno/pancakes/chocolate.png" alt=""
+                                class="">
+                                
+                            </div>
+                            <!--imagen del item del menu-->
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    chocolate chips pancakes
+                                </p>
+
+                                <p class="item__description">
+                                    Cuatro panqueques de mezcla regular rellenos con chispas de chocolate, acompañados con una porcion de helado de vainilla en su superficie. 
+                                    
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 4
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+
+
+                            </div>
+                            <!--Informacion del producto-->
+                                                    
+                        </div>
+                    
+                    </div>
+                    <!--Chocolate Pancakes-->
+
+                    
+
+                    <!--Chocolate milkshake-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item bebida">
+                        <div class="item__containter">
+                            <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/bebidas/milkshake/chocolate-milkshake.png" alt="f"
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    chocolate milkshake
+                                </p>
+
+                                <p class="item__description">
+                                    Perfecta combinación de helado y leche, este milkshake consta de tres cucharradas de helado de vainilla, abundante leche, oreos completamente trituradas y nata espumosa.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 4.5
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+
+                    </div>
+                    <!--Chocolate milkshake-->
+
+                    <!--Hamburguesa res-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item almuerzo">
+
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="product-info__img item__img" >
+                                <img src="../images/menu/almuerzo/hamburguesa/carne.png" alt=""
+                                class="w-100">
+                            </div>
+                            <!--imagen del item del menu-->
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    hamburguesa de res
+                                </p>
+
+                                <p class="item__description">
+                                    Fresca y jugosa hamburguesa de res, queso cheddar, cebolla, tomates a la parrilla, pepinillo, lechuga, salsa de tomate y papas fritas.  
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 8.5
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+
+                            </div>
+                            <!--Informacion del producto-->
+
+                        </div>
+
+                    </div>
+                     <!--Hamburguesa res-->
+
+                     <!--Ensalada Caesar-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item  almuerzo">
+
+                        <div class="item__containter">
+                            <!--imagen del item del menu-->
+                            <div class="product-info__img item__img" >
+                                <img src="../images/menu/almuerzo/ensalada/ensalada-caesar.png" alt=""
+                                class="w-100">
+                            </div>
+                            <!--imagen del item del menu-->
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    Ensalada Caesar
+                                </p>
+
+                                <p class="item__description">
+                                    Fabricada con las lechugas más frescas del mercado, contiene trozos de pan y de pollo.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 7.5
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+
+                    </div>
+                    <!--Ensalada Caesar-->
+
+                    <!--Ice Cream Waffle-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item  desayuno">
+
+                        <div class="item__containter">
+
+                            <!--imagen del item del menu-->
+                            <div class="product-info__img item__img" >
+                                <img src="../images/menu/desayuno/waffles/ice-cream.png" alt=""
+                                class="w-100">
+                            </div>
+                            <!--imagen del item del menu-->
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                Ice Cream Waffle
+                                </p>
+
+                                <p class="item__description">
+                                    Un sandwich perfecto para refrescarte en el verano, una delicia de waffle bega lijero, relleno de cremoso helado de vainilla.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 5
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+
+                    </div>
+                    <!--Ice Cream Waffle-->
+
+
+                    <!--Spaghetti de Mariscos-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item almuerzo">
+
+                        <div class="item__containter">
+
+                            <!--imagen del item del menu-->
+                            <div class="product-info__img item__img" >
+                                <img src="../images/menu/almuerzo/pasta/pasta-mariscos.png" alt=""
+                                class="w-100">
+                            </div>
+                            <!--imagen del item del menu-->
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                spaghetti de mariscos
+                                </p>
+
+                                <p class="item__description">
+                                    Perecto para los amantes de la comida del mar, este es un plato absolutamente potenciado por la cocción apropiada de los camarones y langostas. 
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 7.5
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+
+                        </div>
+                        <!--Informacion del producto-->
+                        </div>
+                        
+                    </div>
+                    <!--Spaghetti de Mariscos-->
+
+                    <!--Hamburguesa de pollo-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item  almuerzo ">
+                        
+                        <div class="item__containter">
+
+                            <!--imagen del item del menu-->
+                            <div class="product-info__img item__img" >
+                                <img src="../images/menu/almuerzo/hamburguesa/pollo.png" alt=""
+                                class="w-100">
+                            </div>
+                            <!--imagen del item del menu-->
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                hamburguesa de pollo
+                                </p>
+
+                                <p class="item__description">
+                                    Nuestro filete de pollo crujiente viene envuelto en un pan de papa, cubierto de lechuga romana, tomates y la respectiva dosis de papitas fritas. 
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 6.5
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+
+                            </div>
+                            <!--Informacion del producto-->
+
+                        </div>
+
+                    </div>
+                    <!--Hamburguesa de pollo-->
+
+                    <!--Regular Waffle-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item desayuno">                            
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/desayuno/waffles/regular-waffle.png" alt=""
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->       
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    regular waffle
+                                </p>
+
+                                <p class="item__description">
+                                    Cuatro porciones de waffle con abundante miel caliente y mantequilla derretida. 
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 3.5
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+                       
+                    </div>
+                    <!--Regular Waffle-->
+
+
+                    <!--Nica Tradicional--> 
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item desayuno">                            
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/desayuno/tradicional/tradicional-1.png" alt=""
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->       
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    nica tradicional
+                                </p>
+
+                                <p class="item__description">
+                                    Cargado de crema, tortilla extra caliente, frijoles molidos, aguacate, maduro, salchichas y huevo frito.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 4
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+                       
+                    </div>
+                    <!--Nica Tradicional-->                     
+             
+                    <!--Nutella Waffle-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item desayuno">                            
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/desayuno/waffles/nutella-love-waffle.png" alt=""
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->       
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    nutella extra love waffle
+                                </p>
+
+                                <p class="item__description">
+                                    Tres porciones de waffle exquisitamente esponjosos, cubiernos en nutella y decorados con trozos de fresas.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 5.3
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+                       
+                    </div>
+                    <!--Nutella Waffle-->
+            
+                    <!--Americano Expresso-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item bebida">                            
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/bebidas/cafe/expresso/americano.png" alt=""
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->       
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    
+                                </p>
+
+                                <p class="item__description">
+                                    Elaborado con café negro 100% finamente molido.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 2
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+                       
+                    </div>
+                    <!--Americano Expresso-->
+
+                    <!--Milshake Vainilla Cherry-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item bebida">                            
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/bebidas/milkshake/vainilla-cherry.png" alt=""
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->       
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    extra cherry vanilla milkshake
+                                </p>
+
+                                <p class="item__description">
+                                    Tan simple y delicioso como parece, una sencilla combinación de helado de vainilla, leche y cerezas dulces.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 3
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+                       
+                    </div>
+                    <!--Milshake Vainilla Cherry-->
+
+                    <!--Expresso-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item bebida">                            
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/bebidas/cafe/expresso/expresso.png" alt=""
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->       
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    expresso
+                                </p>
+
+                                <p class="item__description">
+                                    Elaborado con café negro 100% finamente molido.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 2
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+                       
+                    </div>
+                    <!--Expresso-->
+    
+                    <!--Baguette sandwich-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item almuerzo">                            
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/almuerzo/panini/baguette-sandwich.png" alt=""
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->       
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    Baguette
+                                </p>
+
+                                <p class="item__description">
+                                    Preparado con ingredientes frescos, nuestro famoso baguette está cubierto con abundante mantequilla blanda, albahaca y mozzarella derretida, ligeras capas de jamón y acompañado con papas fritas.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 6.5
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+                       
+                    </div>
+                    <!--Baguette sandwich-->
+
+                    <!--Nitro cold brew-->
+                    <div class="col-md-6 cold-lg-4 col-xl-3 p-2 item bebida">                            
+                        <div class="item__containter">
+                             <!--imagen del item del menu-->
+                            <div class="item__img" >
+                                <img src="../images/menu/bebidas/cafe/cold-brew/nitro-cold-brew.png" alt=""
+                                class="">
+                            </div>
+                            <!--imagen del item del menu-->       
+
+                            <!--Informacion del producto-->
+                            <div class="text-center item__text">
+
+                                <p class="item__title text-capitalize my-1">
+                                    nitro cold brew
+                                </p>
+
+                                <p class="item__description">
+                                   Café filtrado en frío fusionado con nitrógeno, textura aterciopelada, sabor dulce y cremosa espuma.
+                                </p>
+
+                                <p class="item__price fw-bold my-4">
+                                    $ 4.5
+                                </p>
+
+                                <button id="add-cart" class="btn-add mb-5">
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                            <!--Informacion del producto-->
+                        </div>
+                       
+                    </div>
+                    <!--Nitro cold brew-->
+
+                                        
+
+                </div>
+
+
+
+
+                
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!--Logo de la página-->
+                <div class="">
+                    <a href="home.html">
+                        <h1>
+                            Insomnia 
+                            <br>
+                            <span class="text-uppercase">Café</span>
+                        </h1>
+                    </a>
+                </div>
+                <!--Logo de la página-->
+
+                <!--Linea-->
+                <div class="linea">
+
+                </div>
+                <!--Linea-->
+
+                <!--Copyright e iconos-->
+                <div class="d-flex justify-content-between my-5">
+                    <p>
+                        &copy;Copyright, Insomnia Café, 2023
+                    </p>
+
+                    <div>
+
+                        <a href="">
+                            <i class="fa-brands fa-facebook social-icons"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-brands fa-instagram social-icons"></i>
+                        </a>
+                       
+                        <a href="">
+                            <i class="fa-brands fa-twitter social-icons"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <!--Copyright e iconos-->
+
+                <!--Menu links-->
+                <div class="text-center menu-link">
+                    <a href="home.html" class="">Inicio</a>
+                    <a href="nosotros.html" class="">Nosotros</a>
+                    <a href="menu.html" class="">Menu</a>
+                    <a href="sucursales.html">Sucursales</a>
+                    <a href="cupones.html">Cupones</a>
+                </div>
+                <!--Menu links-->
+
+            </div>
+        </div>
+
+        <div class="caja-cafe col-lg-12">
+
+        </div>
+    </footer>
+
+
+    <!--bootstrap js-->
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"> 
+    </script>
+<!--bootstrap js-->
+
+<!--Jquery-->
+    <script src="../js/jquery-3.7.0.js">
+    </script>
+<!--Jquery-->
+
+</body>
+</html>

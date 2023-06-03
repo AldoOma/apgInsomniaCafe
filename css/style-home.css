@@ -1,0 +1,283 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Estilos de la ul de la barra de navegación*/
+
+/*
+h1 24
+h2 22
+h3 20
+*/
+
+/*Estilos de la seccion principal donde se ubica el boton de ordenar ya*/
+.main .row{
+    padding: 0;
+    height: 50vh;
+}
+
+h3{
+    font-size: 21px;
+}
+
+
+
+.semillas{
+    background: url(../images/semillas-cafe.jpg) no-repeat ;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 10% 100%, 100% 100%, 100% 0%);
+    /*
+    Punto 1: En el eje x 0 y 0 (punto inicial)
+    Punto 2: En x se desplaza el 10% y usa el 100% de y
+    Punto 3: En el eje x se desplaza todo y en el eje y todo
+    Punto 4: En el eje x se desplaza 100% y en el eje y 0
+    */
+
+}
+
+
+#btn-1{
+    width: 50%;
+    height: 50px;
+    background-color: #230D02 ;
+    border:none;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 17px;
+}
+
+/*Estilos de la seccion principal donde se ubica el boton de ordenar ya*/
+
+
+/*Por que elegirnos sección*/
+.choose-us{
+    background-color: #230D02;
+    color: #fff;
+}
+
+.choose-us p{
+
+    font-size:17px;
+
+}
+
+.choose-us i{
+    font-size: 40px;
+}
+
+.circle{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/bowl.jpg);
+    background-size: cover;
+    background-position:60%;
+    margin: 0 auto;
+}
+
+.small-circle{
+    background-color: aqua;
+    width: 151px;
+    height: 151px;
+    border-radius: 60%;
+    
+}
+
+.bowl-semillas{
+    background: url(../images/semillas-bowl.jpg) ;
+    background-size: cover;
+
+}
+
+.bowl-leche{
+    background: url(../images/leche-bowl.jpg) no-repeat;
+    background-size: cover;
+}
+
+.bowl-cafe{
+    background: url(../images/cafe-bowl.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.col-lg-3, .col-lg-4, .col-lg-1, .row{
+    
+    margin: 0;
+}
+
+/*Galeria*/
+.galeria__contenedor input[type='radio'] {
+margin: 0 10px;
+appearance: none;
+border-radius: 50%;
+border: 5px solid #bbb;
+transition: 0.1s all;
+background-color: #bbb;
+cursor: pointer;
+}
+
+.galeria__contenedor input[type='radio'] {
+    order: 2;
+}
+
+.galeria__contenedor input[type='radio']:checked {
+    
+    box-sizing: border-box;
+    appearance: none;
+    background: white;
+    outline: none;
+    border: 3px solid white;
+    width: 80px;
+    height: 12px;
+    border-radius: 5px;
+    background: #888;
+
+  }
+
+.galeria__contenedor{
+    width: 100%;
+    height: 500px;
+    transform-style: preserve-3d;
+}
+
+.cards{
+    order: 1;
+    position: relative;
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+/*label*/
+.cards__img{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+/*label*/
+
+
+.cards__img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/*Animación*/
+/*
+Cuando tengo seleccionada la imagen 1(mano) la imagen 3(cajera) se va 
+a desplazar -40% en x
+y la imagen 2(restaurante) se desplazara 40% en x
+*/
+/*Cuando la imagen 1 este seleccionada la imagen 3 y la imagen dos se desplazaran 
+a los costados*/
+#img-1:checked ~ .cards #lbl3{
+    transform: translateX(-40%) scale(0.8);
+    z-index: 0;
+
+}
+
+#img-1:checked ~ .cards #lbl2{
+    transform: translateX(40%) scale(0.8);
+    z-index: 0;
+}
+
+/*Cuando la imagen 3 este seleccionada la imagen 1 (mano del mesero) se va a desplazar
+a la derecha y 
+la imagen tres (restaurante) se desplazara a la izquierda
+a los costados*/
+#img-2:checked ~ .cards #lbl1{
+    transform: translateX(-40%) scale(0.8);
+    z-index: 0;
+}
+
+
+#img-2:checked ~ .cards #lbl3{
+    transform: translateX(40%) scale(0.8);
+    z-index: 0;
+}
+
+/*Cuando la imagen 3 este seleccionada la imagen 1 (mano del mesero) se va a desplazar
+a la derecha y 
+la imagen dos (restaurante) se desplazara a la izquierda
+a los costados*/
+#img-3:checked ~ .cards #lbl2{
+    transform: translateX(-40%) scale(0.8);
+    z-index: 0;
+}
+
+
+
+#img-3:checked ~ .cards #lbl1{
+    transform: translateX(40%) scale(0.8);
+    z-index: 0;
+
+}
+
+#img-1:checked ~ .cards #lbl1,
+#img-2:checked ~ .cards #lbl2,
+#img-3:checked ~ .cards #lbl3
+{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+/*Galeria*/
+
+
+/*Por que elegirnos sección*/
+
+/*Ajustes responsivos para cuando este en una pantalla mayor a 992 px*/
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
+/*Ajustes responsivos para cuando este en una pantalla mayor a 900 px*/
+
+@media(max-width: 992px){
+    .semillas{
+        /*
+        Punto 1: En el eje x 0 y 0 (punto inicial)
+        Punto 2: En x se desplaza el 10% y usa el 100% de y
+        Punto 3: En el eje x se desplaza todo y en el eje y todo
+        Punto 4: En el eje x se desplaza 100% y en el eje y 0
+        */
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+    } 
+}
+
+#img-3{
+    position:absolute;
+    left: 30%;
+    top:95%;
+}
+
+#img-2{
+    position:absolute;
+    right:30%;
+    top:95%;
+}
+
+#img-1{
+    position:absolute;
+    left:45%;
+    top:95%;
+}

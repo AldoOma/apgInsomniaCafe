@@ -1,0 +1,51 @@
+.navbar{
+    box-shadow: 0px 2px 15px #444;
+}
+
+/*Titulo Insomnia Café*/
+.navbar-brand h1{
+    font-weight: bold;
+    font-size: 25px;
+    color:#5e2103;
+}
+/*Titulo Insomnia Café*/
+
+
+.navbar i{
+    font-size: 17px;
+}
+
+.bg-primary{
+    background-color:#5e2103!important;
+}
+
+.btn a{
+    color:#5e2103;
+}
+
+.navbar-toggler{
+    box-shadow: none!important;
+}
+
+.navbar-toggler:hover{
+    transform: scale(1.1); /*que aumente su tamanio en un 10%*/
+    cursor: pointer;
+}
+
+/*Estilos de la ul de la barra de navegación*/
+.nav-link:hover{
+    color:#5e2103 !important;
+}
+
+
+
+.nav-item a{
+    font-size: 17px;
+}
+
+@media(max-width: 992px){
+    .nav-item{
+        border-bottom: 0.5px solid #eee;
+    }
+
+}

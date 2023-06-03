@@ -1,0 +1,92 @@
+.image-wrapper {
+    background-color: red;
+    height: 400px;
+    background: url(../images/nosotros/historia.jpg) no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center 30%;
+}
+
+#historia h2{
+    color: #230D02;
+}
+
+.historia__descripcion{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Seccion de equipo de colaboradores de la cafeteria*/
+#equipo{
+    background-color:#230D02 ;
+}
+
+#equipo input[type="radio"]{
+    display: none;
+}
+
+#equipo input[type="radio"]:checked {
+    display: none;
+}
+
+#equipo .empleado{
+    
+    display: flex;
+    justify-content: center;
+    margin-top:20%;
+}
+
+#equipo h2{
+    color:#fff;
+}
+
+.equipo-imagen{
+    width: 80%;
+    position:absolute;
+    top:-25%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.equipo-informacion{
+
+    padding-top: 40%;
+    padding-bottom: 30px;
+    box-shadow: 2px 2px 5px #333;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 2px 2px 5px #444;
+    
+}
+
+.equipo-informacion__nombre{
+    
+    font-size: 22px;
+    color:#553d2a;
+}
+
+.equipo-informacion__puesto{
+    font-size: 19px;
+    color:#8a4932;
+    
+}
+
+
+.social-icons i{
+    font-size: 28px;
+    color:#553d2a;
+    margin: 0 10px;
+}
+
+/*Seccion de equipo de colaboradores de la cafeteria*/
+
+/*Sección de nuestra misión*/
+#mision .image-wrapper{
+    background: url(../images/nosotros/mision.jpg);
+    background-size: cover;
+}
+/*Sección de nuestra misión*/
+
+
